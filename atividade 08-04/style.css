@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base do body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f6f2;
+  color: #3a2f22;
+  line-height: 1.5;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #6f4e37;
+  padding: 20px 0;
+}
+
+/* Imagem do header com título sobreposto */
+.imagem-header {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.imagem-header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.titulo-grande {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  margin: 0;
+}
+
+/* Imagem do conteúdo principal */
+.imagem-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Navegação principal (header nav) */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c68c53;
+}
+
+/* Área principal */
+main {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Seções de conteúdo */
+.secao-conteudo {
+  max-width: 600px;      
+  margin: 0 auto 2rem;   
+  text-align: center;    
+  padding: 0 15px;       
+}
+
+.secao-conteudo ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.secao-conteudo ul li {
+  margin-bottom: 0.5rem;
+  color: #3a2f22;
+  font-weight: 500;
+}
+
+/* Estilização dos títulos */
+h1, h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Centralização simples */
+.centralizado {
+  text-align: center;
+}
+
+/* Navegação secundária dentro do main (ex.: "NOSSA GENTE") */
+main nav ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+  list-style: none;
+}
+
+main nav ul li {
+  text-align: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+  width: 100%;
+}
+
+main nav ul li .titulo-lista {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #6f4e37;
+}
+
+main nav ul li .descricao {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Cards (ex.: produtos, promoções) */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;           
+  height: 150px;         
+  object-fit: cover;     
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #6f4e37;
+  color: white;
+  font-size: 0.9rem;
+}

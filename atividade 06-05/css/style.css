@@ -1,0 +1,47 @@
+.banner {
+    background-image: url('../imagens/banner.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+    padding: 100px 0 100px 150px;
+}
+
+.cor1{
+    color:#ed2f53;
+}
+
+.cor2{
+    color:#160a4c;
+}
+
+.produto {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.produto:hover {
+    transform: scale(1.05);
+}
+
+body {
+    padding-top: 56px; 
+}
+
+.produto-oferta {
+    border: 2px solid #ffc107;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+}
+
+.preco-antigo {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.preco-promocao {
+    color: #d32f2f;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+

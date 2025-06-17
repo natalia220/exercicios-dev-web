@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">ActiveWear</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="masculino.html">Masculino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feminino.html">Feminino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ofertas.html">Ofertas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Produtos -->
+<section class="produtos container mt-5">
+    <h2 class="text-center">Veja nossas promoções imperdíveis</h2> <br>
+    <div class="row">
+        <!-- Produto 1 - Oferta -->
+        <div class="col-md-4 mb-4 position-relative">
+            <div class="card produto-oferta">
+            <div class="badge bg-danger position-absolute top-0 start-0 m-2">Oferta!</div>
+                <img src="imagens/toppreto.jpg" class="card-img-top" alt="Top Esportivo">
+            <div class="card-body text-center">
+                <h5 class="card-title">Top Esportivo preto</h5>
+                <p class="preco-antigo">R$ 89,90</p>
+                <p class="preco-promocao">R$ 65,90</p>
+                <button class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+        <!-- Produto 2 - Oferta -->
+        <div class="col-md-4 mb-4 position-relative">
+            <div class="card produto-oferta">
+            <div class="badge bg-danger position-absolute top-0 start-0 m-2">Oferta!</div>
+                <img src="imagens/shortsazul.jpg" class="card-img-top" alt="Shorts feminino azul">
+            <div class="card-body text-center">
+                <h5 class="card-title">Shorts feminino azul</h5>
+                <p class="preco-antigo">R$ 99,90</p>
+                <p class="preco-promocao">R$ 79,90</p>
+                <button class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+       <!-- Produto 3 - Oferta -->
+        <div class="col-md-4 mb-4 position-relative">
+            <div class="card produto-oferta">
+            <div class="badge bg-danger position-absolute top-0 start-0 m-2">Oferta!</div>
+                <img src="imagens/regatabranca.jpg" class="card-img-top" alt="Regata masculina branca">
+            <div class="card-body text-center">
+                <h5 class="card-title">Regata masculina branca</h5>
+                <p class="preco-antigo">R$ 109,90</p>
+                <p class="preco-promocao">R$ 91,90</p>
+                <button class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+    <!-- Rodapé -->
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <p class="text-center">© 2023 ActiveWear - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<script>
+    // Alerta quando clicar em comprar
+    document.querySelectorAll('.btn-dark').forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Produto adicionado ao carrinho!');
+        });
+    });
+</script>
+
+</html>
